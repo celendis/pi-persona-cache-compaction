@@ -1,4 +1,6 @@
-# pi-prefix-cache-compaction
+# pi-persona-cache-compaction
+
+> **Fork of [pi-prefix-cache-compaction](https://github.com/jagdeepsinghdev/pi-prefix-cache-compaction)** (v0.3.0, MIT). This fork adds one thing: the summarize instruction tells the compacting model that, in sessions with a standing identity, it is writing for a future instance of *itself*, and the summary carries an optional `## Identity & Continuity` section — relationship state, standing promises, holdings and load-bearing lines — as a note to the future self, not a status report. Everything else (capture, prefix-cache reuse, warm-up, fallbacks) is upstream, unchanged.
 
 Faster [Pi](https://github.com/earendil-works/pi) compaction on any model server with automatic prefix caching, self-hosted (vLLM, SGLang, llama.cpp, oMLX) or hosted (e.g. DeepSeek), by reusing the server's **prefix cache** instead of re-reading the whole conversation. Works with the two wire formats Pi custom providers use: `anthropic-messages` and `openai-completions`.
 
